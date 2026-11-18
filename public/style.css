@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+
+header {
+  background: #202b3c;
+  color: white;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+header span {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+main {
+  max-width: 950px;
+  margin: 45px auto;
+  padding: 0 20px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+h1 {
+  margin: 0 0 6px;
+  font-size: 25px;
+}
+
+p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #202b3c;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#search {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+form input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  font-size: 12px;
+  color: #777;
+  background: #fafafa;
+}
+
+td button {
+  padding: 7px 10px;
+  margin-right: 5px;
+}
+
+.delete {
+  background: #b91c1c;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 25px auto;
+  }
+
+  th,
+  td {
+    padding: 9px 5px;
+    font-size: 12px;
+  }
+
+  form input {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Book Inventory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h2>BOOKSHELF</h2>
+    <span>Book Inventory</span>
+  </header>
+
+  <main>
+    <div class="heading">
+      <div>
+        <h1>Book Collection</h1>
+        <p>Manage your library</p>
+      </div>
+      <button id="addBtn">+ Add Book</button>
+    </div>
+
+    <input id="search" placeholder="Search by title or author...">
+
+    <form id="bookForm" hidden>
+      <h3 id="formTitle">Add Book</h3>
+      <input id="title" placeholder="Book title" required>
+      <input id="author" placeholder="Author name" required>
+      <div>
+        <button type="submit" id="submitBtn">Save</button>
+        <button type="button" id="cancelBtn">Cancel</button>
+      </div>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>BOOK TITLE</th>
+          <th>AUTHOR</th>
+          <th>ACTIONS</th>
+        </tr>
+      </thead>
+      <tbody id="books"></tbody>
+    </table>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
